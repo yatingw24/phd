@@ -1,0 +1,17 @@
+Field,Major,Percent_debt,Count,W_debt
+Hard-core Science,Agricultural sciences and natural resources,0.27,1278,346
+Hard-core Science,Biological and biomedical sciences,0.20,9724,1950
+Hard-core Science,Computer and information sciences,0.15,2297,343
+Hard-core Science,Engineering,0.17,10724,1832
+Hard-core Science,"Geosciences, atmospheric, and ocean sciences",0.18,1216,216
+Hard-core Science,Health sciences,0.45,2746,1233
+Hard-core Science,Mathematics and statistics,0.11,2056,233
+Hard-core Science,Multidisciplinary/ interdisciplinary sciences,0.20,1704,341
+Hard-core Science,Physical sciences,0.14,5443,781
+Social Science,Psychology,0.50,3793,1881
+Social Science,Social sciences,0.32,4992,1593
+Business,Business,0.25,1510,384
+Non-Science,Education,0.50,3988,1994
+Non-Science,Humanities,0.35,3358,1165
+Non-Science,Visual and performing arts,0.35,824,292
+Non-Science,Other non-science and engineering,0.44,2209,964
