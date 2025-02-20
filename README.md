@@ -25,9 +25,9 @@ Questions that this article aims to answer:
 ## What I Did:
 ### Tech stack used:
  - `python - pandas`
+ - `R`
  - `regex`
  - `csv`
- - `DataWrapper`
 
 ### A Break Down of Files:
  - `X-men_analysis.ipynb`: the jupyter notebook where I did my majority of data cleaning and analysis.
