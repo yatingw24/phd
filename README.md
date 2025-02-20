@@ -30,10 +30,11 @@ Questions that this article aims to answer:
  - `csv`
 
 ### A Break Down of Files:
- - `X-men_analysis.ipynb`: the jupyter notebook where I did my majority of data cleaning and analysis.
+ - `Analysis.ipynb`: the jupyter notebook where I did my majority of data cleaning and analysis.
  - `febay_output.csv`: average price per X-Man on eBay for issues published in the 80s and the 90s. 
  - `female_output.csv`: each female X-Man's percentage of presence in issues published in 80s and 90s.
  - `x-men.csv`: the original dataset that contains price information on all 26 X-Men characters. 
+ - static_imgs: charts and graphics you find in my article.
 
 ### Data Cleaning and Analysis 
 1. assigned a gender for all 26 X-Men.
@@ -68,7 +69,7 @@ Questions that this article aims to answer:
 3. converted data analysis and findings into journalistic languages.
 
 ## Limitations & Things I'd Like to Improve
-1. This is a data-driven project done within one week - I would like to conduct an in-depth research into Jean Grey.
+1. This is a data-driven project done with a limited amount of time - 
 2. The dataset also listed average prices on various auction sites such as heritage. A comparison between price difference for each character on different sites could be also interesting. 
 3. While more and more female superheros emerge, how their value in second-hand market is different from male X-Men's is worth analyzing. 
  
