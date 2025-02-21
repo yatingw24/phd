@@ -1,577 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<html>
 
-    <!DOCTYPE html>
-<html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Story template</title>
 
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <style>
-      .hero {
-        background-color: #f8f16c72; 
-        text-align: center;
-      }
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-rendering: optimizeLegibility;
+        }
 
-      .icons .icon {
-        font-size: 2.5rem; 
-      }
+        .content {
+            max-width: 640px;
+            margin: auto;
+        }
 
-      body {
-        background-color: #e4f3fa5d;
-        padding: 2rem;
-      }
+        .header {
+            padding: 0; /* Remove default padding */
+            margin-bottom: 3em; /* Add space below the treemap */
+        }
 
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
+        .header img {
+            width: 100%;
+            max-height: 90vh; /* Ensure the image takes up 90% of the page height */
+            object-fit: contain; /* Keep the aspect ratio */
+        }
 
-      .content {
-        margin-top: 40px;
-      }
+        a {
+            color: #f05349;
+        }
 
-      .columns {
-        margin-left: -1rem;
-        margin-right: -1rem;
-      }
+        .footer {
+            background: #f4f4f4;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 4em;
+            padding: 4em 0;
+        }
 
-      .column {
-        padding: 1rem;
-      }
+        figure {
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
 
-      h1 {
-        font-size: 50px;
-        margin-bottom: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-      }
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            color: #666;
+        }
 
-      h3 {
-        font-size: 30px;
-        color: #555;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-top: 30px;
-      }
+        h1 {
+            font-family: 'Lora', Georgia, serif;
+            font-weight: bold;
+            font-size: 3em;
+            line-height: 1.1;
+        }
 
-      p {
-        font-size: 1rem;
-        line-height: 1.4; 
-      }
+        .subhead {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.2em;
+            margin-bottom: 1.5em;
+        }
 
-      .photo {
-        border-radius: 10px; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-        width: 70%; 
-        height: auto; 
-        object-fit: cover; 
-        margin: 0 auto;
-      }
+        .full-width figure {
+            text-align: center;
+        }
 
-      .tags {
-        margin-top: 1rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-      }
+        iframe,
+        img,
+        video {
+            max-width: 100%;
+        }
 
-      .tag {
-        font-size: 0.85rem;
-        border-radius: 5px;
-        padding: 0.3rem 0.6rem;
-        font-weight: 600;
-      }
+        p {
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
 
-      .card {
-        margin-bottom: 1.5rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        overflow: hidden;
-      }
+        ul {
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 1.6;
+        }
 
-      .card-content {
-        padding: 1rem;
-      }
+        iframe {
+            padding-bottom: 1.2em;
+        }
 
-      .about-me-text {
-        max-width: 600px;
-      }
+        code {
+            font-family: 'Courier New', monospace;
+            background: #fff880;
+        }
+
+        /* margin on mobile */
+        @media (max-width: 640px) {
+            body {
+                font-size: 18px;
+            }
+
+            .content {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+        }
+
+        /* Content below treemap */
+        .content-below-treemap {
+            padding-left: 2em;
+            padding-right: 2em;
+            padding-top: 0;
+            max-width: 100%;
+        }
+
+        /* Reduce padding for figures below */
+        .content-below-treemap figure {
+            margin-bottom: 2em;
+        }
     </style>
+</head>
 
-    <title>Yating Wang's Portfolio</title>
-  </head>
-  
-
-  <body>
-    <section class="hero">
-      <div class="container">
-
-        <div class="hero-body">
-          <h1 class="title is-1">Hi, I'm Yating Wang!</h1>
-          <p class="subtitle is-4">Data Journalist | Storyteller | Book Lover</p>
-          <div class="icons">
-            <a href="https://github.com/yatingw24" target="_blank" class="icon is-large">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/yating-w-abb438221/" target="_blank" class="icon is-large">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:yatingw24@gmail.com" class="icon is-large">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
-        
-        </div>
-
-        <div class="hero-foot has-text-centered is-size-3">
-          <nav class="tabs">
-            <div class="container">
-              <ul>
-                <li>
-                  <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                  <a href="#data-projects">Data Projects</a>
-                </li>
-                <li>
-                  <a href="#reporting">Reporting</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-
-        </div>
-      </div>
-    </section>
-    
-
-    <div class="container" id="about-me">
-      <section class="content">
-        <div class="columns is-vcentered">
-            <div class="column is-two-thirds about-me-text">
-                <h3>About Me</h3>
-                <p>
-                  I'm Yating, a data journalist from Beijing, China. I hold a Bachelor's degree in Communication and Psychology from Boston College. Fluent in multiple programming languages and data visualization tools, I cover local news with a particular focus on health, arts, and culture through the lens of data and reporting.
-                </p>
-            </div>
-
-         <div class="column is-one-third">
-            <figure class="image is-size-4">
-              <img src="images/profile.png" alt="A professional photo of Yating Wang" class="photo">
-            </figure>
-          </div>
-    
-        </div>
-      </section>
+<body>
+    <div class="header">
+        <figure>
+            <img src="static_imgs/treemap.png" alt="Amount of PhD enrollment by Fields of Study">
+            <figcaption>Median Stipend By Fields of Study Over the Years, made by Yating Wang</figcaption>
+        </figure>
     </div>
-    
 
-    <div class="container" id="data-projects">
-      <section class="content">
-        <h3>Data Projects</h3>
-
-        <div class="columns is-multiline">
-          <div class="column is-one-third">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="images/treemap.png" alt="An Analaysis about Underpaid PhD Students">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media-content">
-                  <p class="title is-4"><a href="https://yatingw24.github.io/phd/">Female X-Men Remain a Legacy For Comic Fans</a></p>
-                  <p class="subtitle is-6">A data-driven project analyzing the long-standing popularity of Jean Grey, aka the Dark Phoenix in X-Men.</p>
-                </div>
-                <div class="tags">
-                  <span class="tag is-success is-light is-rounded">Python/Pandas</span>
-                  <span class="tag is-warning is-light is-rounded">csv</span>
-                  <span class="tag is-light is-rounded">regex</span>
-                  <span class="tag is-link is-light is-rounded">R/ggplot</span>
-                </div>
-                <footer class="card-footer">
-                  <a href="https://yatingw24.github.io/phd/" class="card-footer-item">Story</a>
-                  <a href="https://github.com/yatingw24/phd" class="card-footer-item">Code</a>
-                </footer>  
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-third">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="images/X-Men.jpg" alt="An Analaysis about Female X-Men and Their Market Value">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media-content">
-                  <p class="title is-4"><a href="https://yatingw24.github.io/X-men/" target="_blank">Female X-Men Remain a Legacy For Comic Fans</a></p>
-                  <p class="subtitle is-6">A data-driven project analyzing the long-standing popularity of Jean Grey, aka the Dark Phoenix in X-Men.</p>
-                </div>
-                <div class="tags">
-                  <span class="tag is-success is-light is-rounded">Python/Pandas</span>
-                  <span class="tag is-warning is-light is-rounded">csv</span>
-                  <span class="tag is-light is-rounded">regex</span>
-                  <span class="tag is-link is-light is-rounded">Datawrapper</span>
-                </div>
-                <footer class="card-footer">
-                  <a href="https://yatingw24.github.io/X-men/" class="card-footer-item">Story</a>
-                  <a href="https://github.com/yatingw24/x-men" class="card-footer-item">Code</a>
-                </footer> 
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-third">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="images/marrigae.jpg" alt="Description of the image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media-content">
-                  <p class="title is-4"><a href="https://a-project-about-ages-at-marriagegunicorn.onrender.com/" target="_blank">Age at First Marriage Across Countries</a></p>
-                  <p class="subtitle is-6">An interactive web application to explore gender differences in the age at first marriage across different countries.</p>
-                </div>
-                <div class="tags">
-                  <span class="is-light is-success tag">python/pandas</span>
-                  <span class="tag is-success is-light is-rounded">Python/Pandas</span>
-                  <span class="tag is-light is-rounded">flask</span>
-                  <span class="tag is-warning is-light is-rounded">interactive web app</span>
-                </div>
-                <a href="https://github.com/yatingw24/marriage-age-web-interface" class="button is-danger is-small">Check the Code</a>  
-                <footer class="card-footer">
-                  <a href="https://github.com/yatingw24/marriage-age-web-interface" class="card-footer-item">Code</a>
-                </footer>   
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-third">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="images/heavy_metal.jpg" alt="Description of the image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media-content">
-                  <p class="title is-4"><a href="https://www.datawrapper.de/_/6JlHl/" target="_blank">Heavy Metal Detected in Consumer Products Imported From Top Manufacturing Countries.</a></p>
-                  <p class="subtitle is-6">A all-in-one chart unveils the most common type of consumer goods contaminated with heavy metals in NYC./p>
-                </div>
-                <div class="tags">
-                  <span class="tag is-success is-light is-rounded">excel</span>
-                  <span class="tag is-warning is-light is-rounded">Datawrapper</span>
-                </div>
-                <footer class="card-footer">
-                  <a href="https://www.datawrapper.de/_/6JlHl/" class="card-footer-item">Take a Peek</a>
-                  <a href="https://github.com/yatingw24/x-men" class="card-footer-item">Code</a>
-                </footer>    
-              </div>
-            </div>
-          </div>
-
+    <div class="content content-below-treemap">
+        <h1>This is the headline of the story you are about to read</h1>
+        <p class="subhead">Unlike the "basic" template, the header text is INSIDE of a .content class so it doesn't
+            get too wide</p>
+        <div class="byline">
+            <p>By <a href="https://yatingw24.github.io/">Yating Wang</a></p>
         </div>
-      </section>
+        <p>Several universities recently announced a suspension of doctoral admissions in response to the halt of federal funding to research institutions by roughly $4 million.</p>
+        <p>And this is not new - the effect of underpayment first ripples outwards with students in non-science and engineering where Boston University decided to halt doctoral applications in Humanities for the 2025-2026 admission cycle after the unionized strike to raise annual salary. The English Department at the University of Chicago now only opens the admission to those with a specialized interest in media aesthetics while other tracks of interest are shut down.</p>
+        <p>Among all doctoral students, those in Humanities, Arts and Social Sciences have struggled the most for the longest time with the lowest stipend that barely sustains the cost of living.</p>
+        <p>While the stipend gap grows even bigger, the baseline of a hard-core science major was unreachable for students in Humanities in the first place. From 2015 to 2019, STEM candidates out-earned Humanities candidates by about $5000.</p>
+        <figure>
+            <img src="static_imgs/linechart.png" alt="Median Stipend By Fields of Study Over the Years">
+            <figcaption>Median Stipend By Fields of Study Over the Years, made by Yating Wang</figcaption>
+        </figure>
+        <p>The pandemic imposed more difficulties, doubling the financial pressure for PhD students. Most had to deal with an inflated workload with everything turned online, and students in non-traditional science majors even saw a drop in the rate.</p>
+        <p>A PhD student’s income comes partially from teacher assistantship, but the TAship comes with much invisible pressure. Different from a professor who taught the class for several years, a doctoral student needs to familiarize themselves with the material and learn how to teach from scratch. “Everything was new, and I was a student like everyone else who’s new to the class,” said Isa Li, a doctoral recipient in Anthropology at New York University in her final year.</p>
+        <p>Li was lucky enough to receive compensation from teacher assistantship (TA) given that it is separated from the annual financial package. “But for other schools, compensation was not guaranteed if TAships were a part of the regular stipend,” she said.</p>
+        <p>Surprisingly, PhD students in Social Science, while technically qualified as STEM majors, are similarly underpaid. Even after an escalation post-covid, the rate for Social Science candidates can hardly catch up with candidates in hard-core Science majors.</p>
+        <figure>
+            <img src="static_imgs/barchart.png" alt="A bar Chart Showing Proportion of Students with Debt Within Each Major">
+            <figcaption>Proportion of Students with Debt Within Each Major, made by Yating Wang</figcaption>
+        </figure>
+        <p>Almost every PhD student has to work during breaks in order to finish their dissertation in five to six years. For students who only have a 9-month financial package, they earn none during the summer.</p>
+        <p>However, Humanities scholars often lack extra funding opportunities that STEM fields tend to offer. “In a discipline in which there is no lab research and little external grant funding, the work is harder to quantify and to see,” explained Professor Weiskott.</p>
+        <p>“But so much work is happening. It has value not just to grads' career development but to the university's overall intellectual profile,” as Professor Weiskott commented.</p>
+        <p>The insecurity only aggravates towards the end of the program. The university may halt one’s stipend if one’s research exceeds seven or eight years, said Li, “but seven-year is quite common.”</p>
+        <p>The level of funding a department receives is closely tied to the financial strength of its field in the broader economy. “Majors like Chemistry benefit from substantial support from lucrative industries such as the pharmaceutical sector, whereas humanities programs rely on donations or grants from nonprofit organizations,” said Li. Technology firms are more willing to invest in STEM fields, further widening the funding gap between disciplines.</p>
+        <p>The number of PhD students slightly increased after the pandemic but with no intent to bounce back entirely. The doctoral student body was roughly 48 students per institution for each new admission cycle before 2020, and has shrunk to 40 students post-covid, surveys from the National Center for Science and Engineering Statistics (NCSES) reveals.</p>
+        <p>“Our department has unfortunately seen a decrease in applicants within the last 5-8 years,” according to the graduate advisor Hunter Morelos-Clark from the History of Arts Department at University of California, Santa Barbara. This year the department received 38 applications compared to 54 applications in 2019.</p>
+        <p>Doctoral candidates in public universities located in states with higher cost of living may face extra financial burden. In 2022, the median difference between what a private university and a public university can offer to English PhD candidates differs by almost 10 thousand.</p>
+        <figure>
+            <img src="static_imgs/distribution.png" alt="distribution of stipend in $ at private universities vs. public universities">
+            <figcaption>Two histograms showing the gap between the stipend in two types of institutions, made by Yating Wang</figcaption>
+        </figure>
+        <p>Still, passion, instead of profit, has driven many to pursue an academic track in Humanities and Arts. Almost every PhD candidate in those fields has foreseen the financial strain before committing more than half of a decade to their academic pursuit. “Many of us knew the challenges before we applied, but we still chose this path because we love what we do,” Li said.</p>
+        <p>Numbers and statistics are more desirable than thousands of lines of text analysis when it comes to the evaluation of one’s contribution to academia. Inevitably, “a choice of discipline translates, in effect, into a choice of salary during the Ph.D.,” said Professor Weiskott.</p>
+        <p>Yet, just because they did not do their research for the money does not mean their work isn’t worth investing in. History students unearth the past, revealing patterns that could prevent today from repeating the past mistakes; English scholars untangle how language fosters communication; and Anthropology candidates decode complex social phenomena into illuminating insights. Their work enriches the way we see, think, and connect.</p>
+        <p>They deserve more, and universities can’t afford to ignore it any longer.</p>
     </div>
-    
 
-    <div class="container" id="reporting">
-      <section class="content" id="reporting">
-        <h3>Reporting</h3>
-          <div class="columns is-multiline">
-        
-            <div class="column is-one-third">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="images/greenway.jpg" alt="Description of the image">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media-content">
-                    <p class="title is-4"><a href="https://theuptowner.org/a-96-million-federal-grant-will-expand-inwood-greenway/" target="_blank">A $96 Million Federal Grant Will Expand Inwood Greenway</a></p>
-                    <p class="subtitle is-6">The planned extension will close a major gap along the Manhattan waterfront for cyclists and pedestrians.</p>
-                  </div>
-                  <div class="tags">
-                    <span class="tag is-success is-light is-rounded">local reporting</span>
-                    <span class="tag is-warning is-light is-rounded">urban policy</span>
-                  </div>
-                  <footer class="card-footer">
-                    <a href="https://theuptowner.org/a-96-million-federal-grant-will-expand-inwood-greenway/" class="card-footer-item">Story</a>
-                  </footer>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="column is-one-third">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="images/harlem.jpg" alt="Description of the image">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <h2><a href="https://theuptowner.org/harlem-group-continues-to-oppose-columbias-expansion/" target="_blank">Harlem Group Continues to Oppose Columbia’s Expansion</a></h2>
-                  <p>
-                    At a community action meeting, West Harlem activists discuss potential actions to stop further development.
-                  </p>
-                  <div class="tags">
-                    <span class="is-light is-success tag">local reporting</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <div class="column is-one-third">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="images/NYP.jpg" alt="Description of the image">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <h2><a href="https://theuptowner.org/hospital-plans-to-close-only-rehab-unit-serving-washington-heights-and-inwood/" target="_blank">Hospital Plans to Close Only Rehab Unit Serving Washington Heights and Inwood</a></h2>
-                  <p>
-                    A NewYork-Presbyterian/Columbia proposal to convert its 16-bed rehabilitation unit to general medical-surgical beds prompts dissent.
-                  </p>
-                  <div class="tags">
-                    <span class="tag is-success is-light is-rounded">public health</span>
-                    <span class="tag is-warning is-light is-rounded">local</span>
-                  </div>
-                  <footer class="card-footer">
-                    <a href="https://theuptowner.org/hospital-plans-to-close-only-rehab-unit-serving-washington-heights-and-inwood/">Story</a>
-                  </footer>
-                </div>
-              </div>
-            </div>
-
-            <div class="column is-one-third">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="images/Saint_omer.jpg" alt="Description of the image">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <h2><a href="https://www.bcheights.com/2023/02/12/saint-omer-review/" target="_blank">‘Saint Omer’ Touches on Motherhood’s Complicated Nature</a></h2>
-                  <p>A movie review on a semi-documentary French production nominated for Best International Feature Film at the 95th Academy Awards.</p>
-                  <div class="tags">
-                    <span class="tag is-success is-light is-rounded">Arts and Culture</span>
-                    <span class="tag is-warning is-light is-rounded">critique</span>
-                    <span class="tag is-light is-rounded">opinion</span>
-                  </div>
-                  <footer class="card-footer">
-                    <a href="https://www.bcheights.com/2023/02/12/saint-omer-review/">Story</a>
-                  </footer>
-                </div>
-              </div>
-            </div>
-            
-          </div>  
-          
-      </section>
+    <div class="footer">
+        <div class="content">
+            <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>.</p>
+        </div>
     </div>
-  </body>
-  <!DOCTYPE html>
-  <html>
-  
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Story template</title>
-  
-      <!-- Google fonts -->
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-          rel="stylesheet">
-      <style>
-          body {
-              margin: 0;
-              font-size: 20px;
-              font-family: Georgia, 'Times New Roman', Times, serif;
-              text-rendering: optimizeLegibility;
-          }
-  
-          .content {
-              max-width: 640px;
-              margin: auto;
-          }
-  
-          .header {
-              padding: 0; /* Remove default padding */
-              margin-bottom: 3em; /* Add space below the treemap */
-          }
-  
-          .header img {
-              width: 100%;
-              max-height: 90vh; /* Ensure the image takes up 90% of the page height */
-              object-fit: contain; /* Keep the aspect ratio */
-          }
-  
-          a {
-              color: #f05349;
-          }
-  
-          .footer {
-              background: #f4f4f4;
-              text-align: center;
-              font-size: 0.8em;
-              margin-top: 4em;
-              padding: 4em 0;
-          }
-  
-          figure {
-              margin: 0;
-              padding-bottom: 1.2em;
-          }
-  
-          figcaption {
-              font-size: 0.8em;
-              text-align: center;
-              margin-top: 0.5em;
-              color: #666;
-          }
-  
-          h1 {
-              font-family: 'Lora', Georgia, serif;
-              font-weight: bold;
-              font-size: 3em;
-              line-height: 1.1;
-          }
-  
-          .subhead {
-              font-family: 'Lora', Georgia, serif;
-              font-size: 1.2em;
-              margin-bottom: 1.5em;
-          }
-  
-          .full-width figure {
-              text-align: center;
-          }
-  
-          iframe,
-          img,
-          video {
-              max-width: 100%;
-          }
-  
-          p {
-              line-height: 1.6;
-              margin: 0;
-              padding-bottom: 1.2em;
-          }
-  
-          ul {
-              margin: 0;
-              padding-bottom: 1em;
-              line-height: 1.6;
-          }
-  
-          iframe {
-              padding-bottom: 1.2em;
-          }
-  
-          code {
-              font-family: 'Courier New', monospace;
-              background: #fff880;
-          }
-  
-          /* margin on mobile */
-          @media (max-width: 640px) {
-              body {
-                  font-size: 18px;
-              }
-  
-              .content {
-                  padding-left: 0.5em;
-                  padding-right: 0.5em;
-              }
-          }
-  
-          /* Content below treemap */
-          .content-below-treemap {
-              padding-left: 2em;
-              padding-right: 2em;
-              padding-top: 0;
-              max-width: 100%;
-          }
-  
-          /* Reduce padding for figures below */
-          .content-below-treemap figure {
-              margin-bottom: 2em;
-          }
-      </style>
-  </head>
-  
-  <body>
-      <div class="header">
-          <figure>
-              <img src="static_imgs/treemap.png" alt="Amount of PhD enrollment by Fields of Study">
-              <figcaption>Median Stipend By Fields of Study Over the Years, made by Yating Wang</figcaption>
-          </figure>
-      </div>
-  
-      <div class="content content-below-treemap">
-          <h1>This is the headline of the story you are about to read</h1>
-          <p class="subhead">Unlike the "basic" template, the header text is INSIDE of a .content class so it doesn't
-              get too wide</p>
-          <div class="byline">
-              <p>By <a href="https://yatingw24.github.io/">Yating Wang</a></p>
-          </div>
-          <p>Several universities recently announced a suspension of doctoral admissions in response to the halt of federal funding to research institutions by roughly $4 million.</p>
-          <p>And this is not new - the effect of underpayment first ripples outwards with students in non-science and engineering where Boston University decided to halt doctoral applications in Humanities for the 2025-2026 admission cycle after the unionized strike to raise annual salary. The English Department at the University of Chicago now only opens the admission to those with a specialized interest in media aesthetics while other tracks of interest are shut down.</p>
-          <p>Among all doctoral students, those in Humanities, Arts and Social Sciences have struggled the most for the longest time with the lowest stipend that barely sustains the cost of living.</p>
-          <p>While the stipend gap grows even bigger, the baseline of a hard-core science major was unreachable for students in Humanities in the first place. From 2015 to 2019, STEM candidates out-earned Humanities candidates by about $5000.</p>
-          <figure>
-              <img src="static_imgs/linechart.png" alt="Median Stipend By Fields of Study Over the Years">
-              <figcaption>Median Stipend By Fields of Study Over the Years, made by Yating Wang</figcaption>
-          </figure>
-          <p>The pandemic imposed more difficulties, doubling the financial pressure for PhD students. Most had to deal with an inflated workload with everything turned online, and students in non-traditional science majors even saw a drop in the rate.</p>
-          <p>A PhD student’s income comes partially from teacher assistantship, but the TAship comes with much invisible pressure. Different from a professor who taught the class for several years, a doctoral student needs to familiarize themselves with the material and learn how to teach from scratch. “Everything was new, and I was a student like everyone else who’s new to the class,” said Isa Li, a doctoral recipient in Anthropology at New York University in her final year.</p>
-          <p>Li was lucky enough to receive compensation from teacher assistantship (TA) given that it is separated from the annual financial package. “But for other schools, compensation was not guaranteed if TAships were a part of the regular stipend,” she said.</p>
-          <p>Surprisingly, PhD students in Social Science, while technically qualified as STEM majors, are similarly underpaid. Even after an escalation post-covid, the rate for Social Science candidates can hardly catch up with candidates in hard-core Science majors.</p>
-          <figure>
-              <img src="static_imgs/barchart.png" alt="A bar Chart Showing Proportion of Students with Debt Within Each Major">
-              <figcaption>Proportion of Students with Debt Within Each Major, made by Yating Wang</figcaption>
-          </figure>
-          <p>Almost every PhD student has to work during breaks in order to finish their dissertation in five to six years. For students who only have a 9-month financial package, they earn none during the summer.</p>
-          <p>However, Humanities scholars often lack extra funding opportunities that STEM fields tend to offer. “In a discipline in which there is no lab research and little external grant funding, the work is harder to quantify and to see,” explained Professor Weiskott.</p>
-          <p>“But so much work is happening. It has value not just to grads' career development but to the university's overall intellectual profile,” as Professor Weiskott commented.</p>
-          <p>The insecurity only aggravates towards the end of the program. The university may halt one’s stipend if one’s research exceeds seven or eight years, said Li, “but seven-year is quite common.”</p>
-          <p>The level of funding a department receives is closely tied to the financial strength of its field in the broader economy. “Majors like Chemistry benefit from substantial support from lucrative industries such as the pharmaceutical sector, whereas humanities programs rely on donations or grants from nonprofit organizations,” said Li. Technology firms are more willing to invest in STEM fields, further widening the funding gap between disciplines.</p>
-          <p>The number of PhD students slightly increased after the pandemic but with no intent to bounce back entirely. The doctoral student body was roughly 48 students per institution for each new admission cycle before 2020, and has shrunk to 40 students post-covid, surveys from the National Center for Science and Engineering Statistics (NCSES) reveals.</p>
-          <p>“Our department has unfortunately seen a decrease in applicants within the last 5-8 years,” according to the graduate advisor Hunter Morelos-Clark from the History of Arts Department at University of California, Santa Barbara. This year the department received 38 applications compared to 54 applications in 2019.</p>
-          <p>Doctoral candidates in public universities located in states with higher cost of living may face extra financial burden. In 2022, the median difference between what a private university and a public university can offer to English PhD candidates differs by almost 10 thousand.</p>
-          <figure>
-              <img src="static_imgs/distribution.png" alt="distribution of stipend in $ at private universities vs. public universities">
-              <figcaption>Two histograms showing the gap between the stipend in two types of institutions, made by Yating Wang</figcaption>
-          </figure>
-          <p>Still, passion, instead of profit, has driven many to pursue an academic track in Humanities and Arts. Almost every PhD candidate in those fields has foreseen the financial strain before committing more than half of a decade to their academic pursuit. “Many of us knew the challenges before we applied, but we still chose this path because we love what we do,” Li said.</p>
-          <p>Numbers and statistics are more desirable than thousands of lines of text analysis when it comes to the evaluation of one’s contribution to academia. Inevitably, “a choice of discipline translates, in effect, into a choice of salary during the Ph.D.,” said Professor Weiskott.</p>
-          <p>Yet, just because they did not do their research for the money does not mean their work isn’t worth investing in. History students unearth the past, revealing patterns that could prevent today from repeating the past mistakes; English scholars untangle how language fosters communication; and Anthropology candidates decode complex social phenomena into illuminating insights. Their work enriches the way we see, think, and connect.</p>
-          <p>They deserve more, and universities can’t afford to ignore it any longer.</p>
-      </div>
-  
-      <div class="footer">
-          <div class="content">
-              <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>.</p>
-          </div>
-      </div>
-  
-  </body>
-  
-  </html>
-  
+
+</body>
+
+</html>
