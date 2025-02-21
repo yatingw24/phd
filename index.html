@@ -383,4 +383,195 @@
       </section>
     </div>
   </body>
-</html>
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Story template</title>
+  
+      <!-- Google fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+      <style>
+          body {
+              margin: 0;
+              font-size: 20px;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              text-rendering: optimizeLegibility;
+          }
+  
+          .content {
+              max-width: 640px;
+              margin: auto;
+          }
+  
+          .header {
+              padding: 0; /* Remove default padding */
+              margin-bottom: 3em; /* Add space below the treemap */
+          }
+  
+          .header img {
+              width: 100%;
+              max-height: 90vh; /* Ensure the image takes up 90% of the page height */
+              object-fit: contain; /* Keep the aspect ratio */
+          }
+  
+          a {
+              color: #f05349;
+          }
+  
+          .footer {
+              background: #f4f4f4;
+              text-align: center;
+              font-size: 0.8em;
+              margin-top: 4em;
+              padding: 4em 0;
+          }
+  
+          figure {
+              margin: 0;
+              padding-bottom: 1.2em;
+          }
+  
+          figcaption {
+              font-size: 0.8em;
+              text-align: center;
+              margin-top: 0.5em;
+              color: #666;
+          }
+  
+          h1 {
+              font-family: 'Lora', Georgia, serif;
+              font-weight: bold;
+              font-size: 3em;
+              line-height: 1.1;
+          }
+  
+          .subhead {
+              font-family: 'Lora', Georgia, serif;
+              font-size: 1.2em;
+              margin-bottom: 1.5em;
+          }
+  
+          .full-width figure {
+              text-align: center;
+          }
+  
+          iframe,
+          img,
+          video {
+              max-width: 100%;
+          }
+  
+          p {
+              line-height: 1.6;
+              margin: 0;
+              padding-bottom: 1.2em;
+          }
+  
+          ul {
+              margin: 0;
+              padding-bottom: 1em;
+              line-height: 1.6;
+          }
+  
+          iframe {
+              padding-bottom: 1.2em;
+          }
+  
+          code {
+              font-family: 'Courier New', monospace;
+              background: #fff880;
+          }
+  
+          /* margin on mobile */
+          @media (max-width: 640px) {
+              body {
+                  font-size: 18px;
+              }
+  
+              .content {
+                  padding-left: 0.5em;
+                  padding-right: 0.5em;
+              }
+          }
+  
+          /* Content below treemap */
+          .content-below-treemap {
+              padding-left: 2em;
+              padding-right: 2em;
+              padding-top: 0;
+              max-width: 100%;
+          }
+  
+          /* Reduce padding for figures below */
+          .content-below-treemap figure {
+              margin-bottom: 2em;
+          }
+      </style>
+  </head>
+  
+  <body>
+      <div class="header">
+          <figure>
+              <img src="static_imgs/treemap.png" alt="Amount of PhD enrollment by Fields of Study">
+              <figcaption>Median Stipend By Fields of Study Over the Years, made by Yating Wang</figcaption>
+          </figure>
+      </div>
+  
+      <div class="content content-below-treemap">
+          <h1>This is the headline of the story you are about to read</h1>
+          <p class="subhead">Unlike the "basic" template, the header text is INSIDE of a .content class so it doesn't
+              get too wide</p>
+          <div class="byline">
+              <p>By <a href="https://yatingw24.github.io/">Yating Wang</a></p>
+          </div>
+          <p>Several universities recently announced a suspension of doctoral admissions in response to the halt of federal funding to research institutions by roughly $4 million.</p>
+          <p>And this is not new - the effect of underpayment first ripples outwards with students in non-science and engineering where Boston University decided to halt doctoral applications in Humanities for the 2025-2026 admission cycle after the unionized strike to raise annual salary. The English Department at the University of Chicago now only opens the admission to those with a specialized interest in media aesthetics while other tracks of interest are shut down.</p>
+          <p>Among all doctoral students, those in Humanities, Arts and Social Sciences have struggled the most for the longest time with the lowest stipend that barely sustains the cost of living.</p>
+          <p>While the stipend gap grows even bigger, the baseline of a hard-core science major was unreachable for students in Humanities in the first place. From 2015 to 2019, STEM candidates out-earned Humanities candidates by about $5000.</p>
+          <figure>
+              <img src="static_imgs/linechart.png" alt="Median Stipend By Fields of Study Over the Years">
+              <figcaption>Median Stipend By Fields of Study Over the Years, made by Yating Wang</figcaption>
+          </figure>
+          <p>The pandemic imposed more difficulties, doubling the financial pressure for PhD students. Most had to deal with an inflated workload with everything turned online, and students in non-traditional science majors even saw a drop in the rate.</p>
+          <p>A PhD student’s income comes partially from teacher assistantship, but the TAship comes with much invisible pressure. Different from a professor who taught the class for several years, a doctoral student needs to familiarize themselves with the material and learn how to teach from scratch. “Everything was new, and I was a student like everyone else who’s new to the class,” said Isa Li, a doctoral recipient in Anthropology at New York University in her final year.</p>
+          <p>Li was lucky enough to receive compensation from teacher assistantship (TA) given that it is separated from the annual financial package. “But for other schools, compensation was not guaranteed if TAships were a part of the regular stipend,” she said.</p>
+          <p>Surprisingly, PhD students in Social Science, while technically qualified as STEM majors, are similarly underpaid. Even after an escalation post-covid, the rate for Social Science candidates can hardly catch up with candidates in hard-core Science majors.</p>
+          <figure>
+              <img src="static_imgs/barchart.png" alt="A bar Chart Showing Proportion of Students with Debt Within Each Major">
+              <figcaption>Proportion of Students with Debt Within Each Major, made by Yating Wang</figcaption>
+          </figure>
+          <p>Almost every PhD student has to work during breaks in order to finish their dissertation in five to six years. For students who only have a 9-month financial package, they earn none during the summer.</p>
+          <p>However, Humanities scholars often lack extra funding opportunities that STEM fields tend to offer. “In a discipline in which there is no lab research and little external grant funding, the work is harder to quantify and to see,” explained Professor Weiskott.</p>
+          <p>“But so much work is happening. It has value not just to grads' career development but to the university's overall intellectual profile,” as Professor Weiskott commented.</p>
+          <p>The insecurity only aggravates towards the end of the program. The university may halt one’s stipend if one’s research exceeds seven or eight years, said Li, “but seven-year is quite common.”</p>
+          <p>The level of funding a department receives is closely tied to the financial strength of its field in the broader economy. “Majors like Chemistry benefit from substantial support from lucrative industries such as the pharmaceutical sector, whereas humanities programs rely on donations or grants from nonprofit organizations,” said Li. Technology firms are more willing to invest in STEM fields, further widening the funding gap between disciplines.</p>
+          <p>The number of PhD students slightly increased after the pandemic but with no intent to bounce back entirely. The doctoral student body was roughly 48 students per institution for each new admission cycle before 2020, and has shrunk to 40 students post-covid, surveys from the National Center for Science and Engineering Statistics (NCSES) reveals.</p>
+          <p>“Our department has unfortunately seen a decrease in applicants within the last 5-8 years,” according to the graduate advisor Hunter Morelos-Clark from the History of Arts Department at University of California, Santa Barbara. This year the department received 38 applications compared to 54 applications in 2019.</p>
+          <p>Doctoral candidates in public universities located in states with higher cost of living may face extra financial burden. In 2022, the median difference between what a private university and a public university can offer to English PhD candidates differs by almost 10 thousand.</p>
+          <figure>
+              <img src="static_imgs/distribution.png" alt="distribution of stipend in $ at private universities vs. public universities">
+              <figcaption>Two histograms showing the gap between the stipend in two types of institutions, made by Yating Wang</figcaption>
+          </figure>
+          <p>Still, passion, instead of profit, has driven many to pursue an academic track in Humanities and Arts. Almost every PhD candidate in those fields has foreseen the financial strain before committing more than half of a decade to their academic pursuit. “Many of us knew the challenges before we applied, but we still chose this path because we love what we do,” Li said.</p>
+          <p>Numbers and statistics are more desirable than thousands of lines of text analysis when it comes to the evaluation of one’s contribution to academia. Inevitably, “a choice of discipline translates, in effect, into a choice of salary during the Ph.D.,” said Professor Weiskott.</p>
+          <p>Yet, just because they did not do their research for the money does not mean their work isn’t worth investing in. History students unearth the past, revealing patterns that could prevent today from repeating the past mistakes; English scholars untangle how language fosters communication; and Anthropology candidates decode complex social phenomena into illuminating insights. Their work enriches the way we see, think, and connect.</p>
+          <p>They deserve more, and universities can’t afford to ignore it any longer.</p>
+      </div>
+  
+      <div class="footer">
+          <div class="content">
+              <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>.</p>
+          </div>
+      </div>
+  
+  </body>
+  
+  </html>
+  
