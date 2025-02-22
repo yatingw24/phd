@@ -1,5 +1,5 @@
-# PhD Candidates in HUmanities and Arts are Struggling Financially 
-X-Men, first made their debut in American Comics in 1963, are a group of mutants - humans with supernatural power that manifested at puberty - that later reached a huge fanbase. 
+# PhD Candidates in Humanities and Arts are Struggling Financially 
+Trump's recent decision to slash funding to research institutions and health systems has sent shockwaves through academia. In response, many universities have been forced to halt new admissions, leaving students and faculty grappling with the fallout. However, the impact extends far beyond just the STEM fields—humanities, arts, and social science students are facing their own set of challenges as they struggle to secure financial support since a long time ago. 
 
 Here is the shortcut to my [article:](https://yatingw24.github.io/phd/)
 
@@ -11,11 +11,9 @@ A great thank to my data sources:
 ## Key Takeaways 
 Except for Business PhDs, stipends in other disciplines fall below the 2024 U.S. median cost of living ($3,851/month) and are quickly drained by basic expenses;
 
-Students in Humanities, Arts and Social Sciences can hardly earn a stipend that would catch up with candidates in STEM and Business majors. 
+Students in Humanities, Arts and Social Sciences can hardly earn a stipend that would catch up with candidates in STEM and Business majors for almost a decade;
 
-Readers love a dramatic twist - the death of Jean Grey in 1980 has only made her more sought-after than any female X-Man;
-
-Jean Grey's legacy is passed onto her daughter, Rachel Summers, who saw a highest price for on eBay. 
+A PhD student's stipend is not necessarily tied to their year in the program;
 
 ## Goal:
 understanding the shift in the market value of female X-Men by comparing their percentage of appearance in the 80s vs. the 90s and average personal price on auction websites such as eBay.\
