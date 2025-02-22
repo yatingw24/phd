@@ -53,7 +53,7 @@ df[df['Field'] == "Business"]['Overall Pay'].describe()
 
 #### Part II: Making ggplot!
 1. Converted the `cleaned_output.csv` into a dataframe and make multiple boxplots to the distribution of stipend by discipline and by time.
-
+![Chart](static_imgs/boxplot.png)
 - `90s_Appearance_Percent`: the percentage of appearance in issues published after 1990.
 - `80s_Appearance_Percent`: the percentage of appearance in issues published between 1980 and 1989.
 
