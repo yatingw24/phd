@@ -16,11 +16,10 @@ Students in Humanities, Arts and Social Sciences can hardly earn a stipend that 
 A PhD student's stipend is not necessarily tied to their year in the program;
 
 ## Questions That This Article Would Answer:
-1. What are the reason(s) students in non-STEM disciplines receive fewer stipend? Has this been a trend for a long time before union strikes?
+1. What are the reason(s) students in non-STEM disciplines receive fewer stipend? Has this been a trend for a long time before union strikes and even before Covid?
 2. What does a Humanity PhD candidate's budget looks like after the deduction of living cost? 
 3. Is there a decrease/increase in doctoral enrollments in disciplines such as Humanities, Arts and Social Science in recent years?
 4. Are PhD students more or less financially struggling depending on which discipline he chooses?
-5. 
 
 ## What I Did:
 ### Tech stack used:
