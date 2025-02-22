@@ -1,9 +1,12 @@
-# PhD Candidates 
+# PhD Candidates in HUmanities and Arts are Struggling Financially 
 X-Men, first made their debut in American Comics in 1963, are a group of mutants - humans with supernatural power that manifested at puberty - that later reached a huge fanbase. 
 
 Here is the shortcut to my [article:](https://yatingw24.github.io/phd/)
 
-A great thank to [Rally's Mutant Moneyball](https://github.com/EliCash82/mutantmoneyball/tree/main?tab=readme-ov-file), who provided the context for data collection and a walkthrough of his priliminary data analysis.
+A great thank to my data sources:
+- [PhD Stipends](https://www.phdstipends.com/) for sharing the financial information about PhD students in many disciplines at universities across the US in different academic years.
+- [A statistical Report on English PhD Stipends in the US](https://profession.mla.org/english-phd-stipends-in-the-united-states-statistical-report/) for collecting data on stipends for PhD candidates in English conducted between summer 2021 and spring 2022.
+
 
 ## Key Takeaways of my Project
 Jean Grey, heavily referenced in both American comics and the film franchise, remains valuable in the second-hand market;
