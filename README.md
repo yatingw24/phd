@@ -40,8 +40,10 @@ A PhD student's stipend is not necessarily tied to their year in the program;
 
 ### Data Cleaning and Analysis 
 1. Opened `phd_stipends.csv` and dropped all irrelevant, confusing and null entries including NA and Non-English characters 
-2. Create a new column that categorizes majors into four primary disciplines: Business, Hard-core Science, Social Science and Humanities and Arts. 
-    
+2. Create a new column that categorizes majors into four primary disciplines: Business, Hard-core Science, Social Science and Humanities and Arts. For Humanities, here is a sample code:
+```python
+    df.loc[df["Department"].str.contains("A|B|C|...", case=False, na=True), "Field"] = "Humanities"
+```
 3. separated first names and last names and converted each name into the standard name format.
 4. replaced all signs, such as a dollar sign ($) or a percentage sign (%).
 5. selected columns, `member`, `90s_Appearance_Percent` and `80s_Appearance_Percent` to see the change in the amount of presence in issues published in the 80s versus the 90s:
