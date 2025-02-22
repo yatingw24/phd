@@ -8,8 +8,10 @@ A great thank to my data sources:
 - [A statistical Report on English PhD Stipends in the US](https://profession.mla.org/english-phd-stipends-in-the-united-states-statistical-report/) for collecting data on stipends for PhD candidates in English conducted between summer 2021 and spring 2022.
 
 
-## Key Takeaways of my Project
-Jean Grey, heavily referenced in both American comics and the film franchise, remains valuable in the second-hand market;
+## Key Takeaways 
+Except for Business PhDs, stipends in other disciplines fall below the 2024 U.S. median cost of living ($3,851/month) and are quickly drained by basic expenses;
+
+Students in Humanities, Arts and Social Sciences can hardly earn a stipend that would catch up with candidates in STEM and Business majors. 
 
 Readers love a dramatic twist - the death of Jean Grey in 1980 has only made her more sought-after than any female X-Man;
 
