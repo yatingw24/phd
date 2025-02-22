@@ -1,5 +1,5 @@
 # PhD Candidates in Humanities and Arts are Struggling Financially 
-Trump's recent decision to slash funding to research institutions and health systems has sent shockwaves through academia. In response, many universities have been forced to halt new admissions, leaving students and faculty grappling with the fallout. However, the financial struggles for humanities, arts, and social science students date back much earlier, **long before this funding cut.**. 
+Trump's recent decision to slash funding to research institutions and health systems has sent shockwaves through academia. In response, many universities have been forced to halt new admissions, leaving students and faculty grappling with the fallout. However, the financial struggles for Humanities, Arts, and Social Science phD students date back much earlier, **long before this funding cut.**. 
 
 Here is the shortcut to my [article:](https://yatingw24.github.io/phd/)
 
@@ -15,15 +15,12 @@ Students in Humanities, Arts and Social Sciences can hardly earn a stipend that 
 
 A PhD student's stipend is not necessarily tied to their year in the program;
 
-## Goal:
-understanding the shift in the market value of female X-Men by comparing their percentage of appearance in the 80s vs. the 90s and average personal price on auction websites such as eBay.\
-
-Questions that this article aims to answer:
-1. what drives the disappearance, or the resurgence, of a female character?
-2. in which era does X-Men of more diverse background came into play?
-3. as more characters were created, does the core members need to make more space for them?
-4. how willingly do collectors of X-Men issues are to pay for a premium for rare issues and rare characters?
-5. are female X-Men in the 80s just auxiliary?
+## Questions That This Article Would Answer:
+1. What are the reason(s) students in non-STEM disciplines receive fewer stipend? Has this been a trend for a long time before union strikes?
+2. What does a Humanity PhD candidate's budget looks like after the deduction of living cost? 
+3. Is there a decrease/increase in doctoral enrollments in disciplines such as Humanities, Arts and Social Science in recent years?
+4. Are PhD students more or less financially struggling depending on which discipline he chooses?
+5. 
 
 ## What I Did:
 ### Tech stack used:
