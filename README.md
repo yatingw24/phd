@@ -1,5 +1,5 @@
 # PhD Candidates in Humanities and Arts are Struggling Financially 
-Trump's recent decision to slash funding to research institutions and health systems has sent shockwaves through academia. In response, many universities have been forced to halt new admissions, leaving students and faculty grappling with the fallout. However, the impact extends far beyond just the STEM fields—humanities, arts, and social science students are facing their own set of challenges as they struggle to secure financial support since a long time ago. 
+Trump's recent decision to slash funding to research institutions and health systems has sent shockwaves through academia. In response, many universities have been forced to halt new admissions, leaving students and faculty grappling with the fallout. However, the financial struggles for humanities, arts, and social science students date back much earlier, **long before this funding cut.**. 
 
 Here is the shortcut to my [article:](https://yatingw24.github.io/phd/)
 
