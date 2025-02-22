@@ -1,5 +1,5 @@
 # PhD Candidates in Humanities and Arts are Struggling Financially 
-Trump's recent decision to slash funding to research institutions and health systems has sent shockwaves through academia. In response, many universities have been forced to halt new admissions, leaving students and faculty grappling with the fallout. However, the financial struggles for Humanities, Arts, and Social Science phD students date back much earlier, **long before this funding cut.**. 
+Trump's recent decision to slash funding to research institutions and health systems has sent shockwaves through academia. In response, many universities have been forced to halt new admissions, leaving students and faculty grappling with the fallout. However, the financial struggles for Humanities, Arts, and Social Science phD students date back much earlier, **long before this funding cut**. 
 
 Here is the shortcut to my [article:](https://yatingw24.github.io/phd/)
 
@@ -22,7 +22,7 @@ A PhD student's stipend is not necessarily tied to their year in the program;
 4. Are PhD students more or less financially struggling depending on which discipline he chooses?
 
 ## What I Did:
-### Tech stack used:
+### Tech Stack sed:
  - `python - pandas`
  - `R`
  - `regex`
@@ -30,14 +30,18 @@ A PhD student's stipend is not necessarily tied to their year in the program;
 
 ### A Break Down of Files:
  - `Analysis.ipynb`: the jupyter notebook where I did my majority of data cleaning and analysis.
- - `febay_output.csv`: average price per X-Man on eBay for issues published in the 80s and the 90s. 
- - `female_output.csv`: each female X-Man's percentage of presence in issues published in 80s and 90s.
- - `x-men.csv`: the original dataset that contains price information on all 26 X-Men characters. 
+  - `ggplot_dist.ipynb`: the jupyter notebook where I used R console to generate charts and plots. 
+ - `cleaned_output.csv`: the curated dataset after my categorization of majors into four disciplines - Business, Science, Social Science and Humanities. 
+ - `debt.csv`: a breakdown of percentage of debt by discipline.
+  - `treemap.csv`: a spreadsheet which eventually presented through a treemap that shows the total number of doctoral enrollments in 2024 by discipline. 
+ - `phd_stipends.csv`: the original dataset that contains all financial information about nationalwide stipends across discipines. 
  - static_imgs: charts and graphics you find in my article.
+  - `privater.csv` and `public.csv`: data about English PhD stipends in public universities and private universities. 
 
 ### Data Cleaning and Analysis 
-1. assigned a gender for all 26 X-Men.
-2. created a dataframe, `df_female`, which contains all information, issues each is featured in different decades and market value on various audtion sites.
+1. Opened `phd_stipends.csv` and dropped all irrelevant, confusing and null entries including NA and Non-English characters 
+2. Create a new column that categorizes majors into four primary disciplines: Business, Hard-core Science, Social Science and Humanities and Arts. 
+    
 3. separated first names and last names and converted each name into the standard name format.
 4. replaced all signs, such as a dollar sign ($) or a percentage sign (%).
 5. selected columns, `member`, `90s_Appearance_Percent` and `80s_Appearance_Percent` to see the change in the amount of presence in issues published in the 80s versus the 90s:
