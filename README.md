@@ -70,17 +70,17 @@ public %>%
 3. Combined the dataframe for private schools and public schools together using `rbind()`.
 4. Stacked density plots for each type of university to compared the gap between the median English PhD stipend. 
 
-### Making ggplot!
+### Making Ggplot!
 #### 1st - A Line Chart showing the Growing Stipend Gap Between Disciplines 
 1. Converted the `cleaned_output.csv` into a dataframe and make multiple boxplots to the distribution of **median stipend** by discipline and by time. As the statistical summary revealed, each discipline's stipend is more or less normally distributed. Either median and mean could be a fair representation of the overall stipend. 
 ![Chart](static_imgs/boxplot.png)
-2. Named a new dataframe called `df_median` grouped by `Academic Year` and `Field`. All data entries are median stipend for a specific major in a specific academic year.
-3. Made **a multi-line chart** using `ggplot`, `geom_rect`, `geom_line` and `geom_point`. 
+2. Named a new dataframe called `df_median` grouped by `Academic Year` and `Field`. `summarize()` is used to ensure all data entries are median stipend for a specific major in a specific academic year.
+3. Made **a multi-line chart** using `geom_rect`, `geom_line` and `geom_point`. 
 4. A breakdown of chart elements:
-- each line: each line representing a discipline;
+- each line: each line representing a discipline: Business, Social Science, STEM, and Humanities;
 - x-axis: the academic year;
 - y-axis: median stipend in $;
-- highlighted area: the pandemic.
+- highlighted area: academic years affected by the pandemic.
 
 #### 2nd - A Vertical Bar Chart Comparing the Percentage of Debted Students in Each Major
 1. Loaded the data, `debt.csv` and went straight to making ggplot using `geom_bar`.
