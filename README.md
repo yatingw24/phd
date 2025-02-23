@@ -71,12 +71,15 @@ public %>%
 4. Stacked density plots for each type of university to compared the gap between the median English PhD stipend. 
 
 ### Making ggplot!
+#### 1st - A Line Chart showing the Growing Stipend Gap Between Disciplines 
 1. Converted the `cleaned_output.csv` into a dataframe and make multiple boxplots to the distribution of **median stipend** by discipline and by time. As the statistical summary revealed, each discipline's stipend is more or less normally distributed. Either median and mean could be a fair representation of the overall stipend. 
 ![Chart](static_imgs/boxplot.png)
 2. Named a new dataframe called `df_median` grouped by `Academic Year` and `Field`. All data entries are median stipend for a specific major in a specific academic year.
 3. Made **a multi-line chart** using `ggplot`, `geom_rect`, `geom_line` and `geom_point` with each line representing a discipline. 
-- `90s_Appearance_Percent`: the percentage of appearance in issues published after 1990.
-- `80s_Appearance_Percent`: the percentage of appearance in issues published between 1980 and 1989.
+
+#### 2nd - A Vertical Bar Chart Comparing the Percentage of Debted Students in Each Discipline
+1. Loaded the data, `debt.csv` and went straight to making ggplot using `geom_bar`.
+2. Given that I'd like to represent the percentage, I need to have the bar background go to 100%. As a result, I required `library(scales)` and set my my x-axis' scale from 0 to 1.
 
 6. analyzed the market value of each X-Man by pulling out columns `PPI80s_ebay` and `PPI90s_ebay`:
 
