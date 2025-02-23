@@ -75,27 +75,25 @@ public %>%
 1. Converted the `cleaned_output.csv` into a dataframe and make multiple boxplots to the distribution of **median stipend** by discipline and by time. As the statistical summary revealed, each discipline's stipend is more or less normally distributed. Either median and mean could be a fair representation of the overall stipend. 
 ![Chart](static_imgs/boxplot.png)
 2. Named a new dataframe called `df_median` grouped by `Academic Year` and `Field`. All data entries are median stipend for a specific major in a specific academic year.
-3. Made **a multi-line chart** using `ggplot`, `geom_rect`, `geom_line` and `geom_point` with each line representing a discipline. 
+3. Made **a multi-line chart** using `ggplot`, `geom_rect`, `geom_line` and `geom_point`. 
+4. A breakdown of chart elements:
+- each line: each line representing a discipline;
+- x-axis: the academic year;
+- y-axis: median stipend in $;
+- highlighted area: the pandemic.
 
-#### 2nd - A Vertical Bar Chart Comparing the Percentage of Debted Students in Each Discipline
+#### 2nd - A Vertical Bar Chart Comparing the Percentage of Debted Students in Each Major
 1. Loaded the data, `debt.csv` and went straight to making ggplot using `geom_bar`.
 2. Given that I'd like to represent the percentage, I need to have the bar background go to 100%. As a result, I required `library(scales)` and set my my x-axis' scale from 0 to 1.
+3. Colored each major accordingly to the disciple each belongs to and made sure the title matches the color-coding as well. 
+4. a breakdown of chart elements:
+- x-axis: the percentage of debted students;
+- y-axis: each bar is a major;
+5. In case you are curious why I chose percentage as the scale - it would be unfair to represent the number here since the amount of enrollments in STEM almost tripled over that of Non-Science majors.
 
-6. analyzed the market value of each X-Man by pulling out columns `PPI80s_ebay` and `PPI90s_ebay`:
-
-- `PPI80s_ebay`: average market price for a certain X-Man on eBay for issues on Very Good Condition published between 1980 and 1989;
-- `PPI90s_ebay`: average market price for a certain X-Man on eBay for issues on _Very Good Condition_ published after 1990;
-
-7. exported dataframes into csv ready for upload in Data viz tool.
-
-### Data Vizs 
-1. represent the change in percentage of presence from the 80s to the 90s with a side-by-side <ins>horizontal stack bar chart:
-- those with an increase of presence were highlighted.
-
-2. show female X-Men's average price over time in two separate scatterplot.
-- x-axis: Average price per issue published in the 80s and the 90s. 
-- y-axis: Percentage of Appearance for each X-Men character in issues published in the 80s and the 90s. 
-- each green circle represents one female X-Man. 
+#### 3rd - A Treemap About the Amount of PhD Candidates by Discipline
+1. Loaded the data, `cleaned_output.csv`, and required `library(treemapify)` to enable the treemap graphing function;
+2. 
 
 ### Skills Newly Acquired
 1. Data analysis is not only done in Python/Pandas, but also in R using a variety of graphing functions such as `geom_bar()`, `geom_treemap()`.
