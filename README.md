@@ -106,10 +106,10 @@ public %>%
 ### Skills Newly Acquired
 1. Data analysis is not only done in Python/Pandas, but also in R using a variety of graphing functions such as `geom_bar()`, `geom_treemap()`.
 2. Widened both **my data sources** AND **my choices of chart types** to better convey the message with the most effective type.
-3. Acquired proficiency in R functions, including `select()`, `filter()`, `group_by()`, `summarize()`, etc.
+3. Practiced advanced data analysis in R such as convertion of characters to numerics, changing fonts, effective annotations, etc. 
 
 ## Limitations & Things I'd Like to Improve
 1. This is a data-driven project done with a limited amount of time - I would interview PhD candidates from public universities to understand their stipend and how they support themselves financially;
-2. Cost of living is another key parameter that could influence whether PhD students are struggling financially or not. In this story, I borrowed the median cost of living in the US to compare that with the stipend. Ideally, I should've 
-3. 
+2. While this analysis compares stipends to the U.S. median cost of living ($3,851/month in 2024), the actual living costs vary widely by location. Future work could involve curating a new dataset on regional stipend differences and visualizing geographic disparities in financial support for PhD students. 
+3. While I applied a stipend range filter (15,000–90,000), I could have used more systematic outlier detection methods, such as boxplots or IQR filtering to assess the impact of extreme values.
  
