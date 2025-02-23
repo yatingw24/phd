@@ -98,13 +98,15 @@ public %>%
 3. The purpose was to learn how to make a treemap in R, but it was less revelatory if it is put in the story, as I later realized. As a result, it served as an visual context, allowing readers to understand the proportion of PhD candidates in each discipline.
 
 #### 4th - Two Density Plots for Showing the Financial Support by Types of Institutions
-1. 
-2. 
+1. In Prof Weiskott's research, he made two separate spreadsheets in order to reveal the difference in stipend offered to English PhD at public universities and private universities. 
+2. Since stipends are a continuous variable, using a distribution plot (density plot) is more effective for visualizing variations in financial support across institutions. This allows for an easier comparison of stipend ranges, central tendencies, and overall distribution patterns between public and private universities.
+3. Distributions of English Stipend in public and private universities are plotted with `geom_density` and `facet_wrap` to show them at once. 
+4. Last, I pointed out the median with dotted lines to directly visualize the gap between stipend offered by public and private institutions. 
 
 ### Skills Newly Acquired
 1. Data analysis is not only done in Python/Pandas, but also in R using a variety of graphing functions such as `geom_bar()`, `geom_treemap()`.
-2. Widened my choices of chart types to better convey the message with the most effective type.
-3. Acquired more R functions in selecting, filtering, grouping, summarizng data.
+2. Widened both **my data sources** AND **my choices of chart types** to better convey the message with the most effective type.
+3. Acquired proficiency in R functions, including `select()`, `filter()`, `group_by()`, `summarize()`, etc.
 
 ## Limitations & Things I'd Like to Improve
 1. This is a data-driven project done with a limited amount of time - I would interview PhD candidates from public universities to understand their stipend and how they support themselves financially;
