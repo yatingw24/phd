@@ -92,7 +92,12 @@ public %>%
 5. In case you are curious why I chose percentage as the scale - it would be unfair to represent the number here since the amount of enrollments in STEM almost tripled over that of Non-Science majors.
 
 #### 3rd - A Treemap About the Amount of PhD Candidates by Discipline
-1. Loaded the data, `cleaned_output.csv`, and required `library(treemapify)` to enable the treemap graphing function;
+1. Loaded the data, `cleaned_output.csv`, and required `library(treemapify)` to enable the treemap graphing function.
+2. The area is a straightfoward representation of how many students are enrolled in which discipline. 
+3. The purpose was to learn how to make a treemap in R, but it was less revelatory if it is put in the story. As a result, it served as an visual context, allowing readers to understand that there are fewer PhD candidates in non-science disciplines. 
+
+#### 4th - Two Density Plots for Showing the Financial Support by Types of Institutions
+1. 
 2. 
 
 ### Skills Newly Acquired
