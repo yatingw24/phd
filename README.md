@@ -6,6 +6,7 @@ Here is the shortcut to my [article:](https://yatingw24.github.io/phd/)
 A great thank to my data sources:
 - [PhD Stipends](https://www.phdstipends.com/) for sharing the financial information about PhD students in many disciplines at universities across the US in different academic years.
 - [A statistical Report on English PhD Stipends in the US](https://profession.mla.org/english-phd-stipends-in-the-united-states-statistical-report/) for collecting data on stipends for PhD candidates in English conducted between summer 2021 and spring 2022.
+- [National Center for Scince and Engineering Statistics](https://ncses.nsf.gov/surveys/doctorate-recipients/2021#data) for curating a variety of tables on information about PhD students' enrollment, debt, demographics, post-grad outcomes, and etc. 
 
 
 ## Key Takeaways 
@@ -88,13 +89,13 @@ public %>%
 3. Colored each major accordingly to the disciple each belongs to and made sure the title matches the color-coding as well. 
 4. a breakdown of chart elements:
 - x-axis: the percentage of debted students;
-- y-axis: each bar is a major;
+- y-axis: The major.
 5. In case you are curious why I chose percentage as the scale - it would be unfair to represent the number here since the amount of enrollments in STEM almost tripled over that of Non-Science majors.
 
 #### 3rd - A Treemap About the Amount of PhD Candidates by Discipline
 1. Loaded the data, `cleaned_output.csv`, and required `library(treemapify)` to enable the treemap graphing function.
 2. The area is a straightfoward representation of how many students are enrolled in which discipline. 
-3. The purpose was to learn how to make a treemap in R, but it was less revelatory if it is put in the story. As a result, it served as an visual context, allowing readers to understand that there are fewer PhD candidates in non-science disciplines. 
+3. The purpose was to learn how to make a treemap in R, but it was less revelatory if it is put in the story, as I later realized. As a result, it served as an visual context, allowing readers to understand the proportion of PhD candidates in each discipline.
 
 #### 4th - Two Density Plots for Showing the Financial Support by Types of Institutions
 1. 
@@ -106,7 +107,7 @@ public %>%
 3. Acquired more R functions in selecting, filtering, grouping, summarizng data.
 
 ## Limitations & Things I'd Like to Improve
-1. This is a data-driven project done with a limited amount of time - 
-2. 
+1. This is a data-driven project done with a limited amount of time - I would interview PhD candidates from public universities to understand their stipend and how they support themselves financially;
+2. Cost of living is another key parameter that could influence whether PhD students are struggling financially or not. In this story, I borrowed the median cost of living in the US to compare that with the stipend. Ideally, I should've 
 3. 
  
