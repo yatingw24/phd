@@ -98,12 +98,12 @@ public %>%
 - each green circle represents one female X-Man. 
 
 ### Skills Newly Acquired
-1. used both pandas and regex to curate a clean dataframe;
-2. practiced html and css when building the story page for this project;
-3. converted data analysis and findings into journalistic languages.
+1. Data analysis is not only done in Python/Pandas, but also in R using a variety of graphing functions such as `geom_bar()`, `geom_treemap()`.
+2. Widened my choices of chart types to better convey the message with the most effective type.
+3. Acquired more R functions in selecting, filtering, grouping, summarizng data.
 
 ## Limitations & Things I'd Like to Improve
 1. This is a data-driven project done with a limited amount of time - 
-2. The dataset also listed average prices on various auction sites such as heritage. A comparison between price difference for each character on different sites could be also interesting. 
-3. While more and more female superheros emerge, how their value in second-hand market is different from male X-Men's is worth analyzing. 
+2. 
+3. 
  
