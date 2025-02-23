@@ -49,11 +49,32 @@ A PhD student's stipend is not necessarily tied to their year in the program;
 4. Describe the statistical summary of monthly stipend for each discipline. Here is a sample code:
 ```python
 df[df['Field'] == "Business"]['Overall Pay'].describe()
-```
 
-#### Part II: Making ggplot!
-1. Converted the `cleaned_output.csv` into a dataframe and make multiple boxplots to the distribution of stipend by discipline and by time.
+```
+#### Part II: Educational Debt by Discipline
+1. Calculated the percentage of debted students for each discipline using spreadsheet mathematic formulas. 
+
+#### Part III: The Comparison Between Stipend Offered by Private and Public Universities
+1. Since I'd like to practice data analysis and cleaning in R, I loaded the data in R;
+2. Replaced all signs, such as the dollar sign $, and converted the stipend into numeric numbers using `mutate()` function in R. Here is a sample code:
+
+```python 
+public %>%
+  mutate(
+    `Amount_USD` = gsub(",", "", `Amount_USD`),   
+    `Amount_USD` = gsub("\\$", "", `Amount_USD`), 
+    `Amount_USD` = as.integer(`Amount_USD`)       
+  )
+
+  ```
+3. Combined the dataframe for private schools and public schools together using `rbind()`.
+4. Stacked density plots for each type of university to compared the gap between the median English PhD stipend. 
+
+### Making ggplot!
+1. Converted the `cleaned_output.csv` into a dataframe and make multiple boxplots to the distribution of **median stipend** by discipline and by time. As the statistical summary revealed, each discipline's stipend is more or less normally distributed. Either median and mean could be a fair representation of the overall stipend. 
 ![Chart](static_imgs/boxplot.png)
+2. Named a new dataframe called `df_median` grouped by `Academic Year` and `Field`. All data entries are median stipend for a specific major in a specific academic year.
+3. Made **a multi-line chart** using `ggplot`, `geom_rect`, `geom_line` and `geom_point` with each line representing a discipline. 
 - `90s_Appearance_Percent`: the percentage of appearance in issues published after 1990.
 - `80s_Appearance_Percent`: the percentage of appearance in issues published between 1980 and 1989.
 
